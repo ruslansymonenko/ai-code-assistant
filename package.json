@@ -1,0 +1,20 @@
+{
+  "name": "ai-code-assistant",
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "dev:cli": "bun run --watch packages/cli/src/index.tsx"
+  },
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
